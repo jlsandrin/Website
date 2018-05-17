@@ -1,0 +1,22 @@
+#set("title") {
+    <title>Jean Sandrin</title>
+}
+
+#set("body") {
+    #for(content in blogContent) {
+<div class="thumbnail-title-wrapper">
+    <div><p>#(content.title)</div></p>
+    <div class="date-wrapper">
+        <span><p>Posted: #date(content.posted, "dd/MM/yyyy - HH:mm")</p></span>
+    </div>
+    <div class="entry-text">
+        <div class="entry-content">
+            <div><a>Author: #(content.author)</a> </div>
+            <div><p>#(content.content)</p></div>
+        </div>
+    </div>
+    <div>
+    }
+}
+
+#embed("master")

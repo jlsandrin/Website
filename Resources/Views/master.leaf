@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        #get(title)
+    </head>
+    <body>
+        #get(body)
+    </body>
+</html>
